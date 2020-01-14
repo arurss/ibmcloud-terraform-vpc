@@ -7,11 +7,11 @@
 ## DEFINE VPC
 #---------------------------------------------------------
 variable "vpc-name" {
-  default = "vpc-name-here"
+  default = "ibmtf"
 }
 
 variable "resource_group" {
-  default = "resource-name-goes-here"
+  default = "ibmtf"
 }
 
 variable "cis_resource_group" {
@@ -22,11 +22,11 @@ variable "cis_resource_group" {
 ## DEFINE Zones
 #---------------------------------------------------------
 variable "zone1" {
-  default = "us-south-1"
+  default = "fra02"
 }
 
 variable "zone2" {
-  default = "us-south-2"
+  default = "fra04"
 }
 
 #---------------------------------------------------------
@@ -79,11 +79,11 @@ variable "vpn-subnet-zone-2" {
 ## DEFINE DNS
 #---------------------------------------------------------
 variable "domain" {
-  default = "mydomain.com"
+  default = "tftest.com"
 }
 
 variable "cis_instance_name" {
-  default = "mydomain.com"
+  default = "tftest.com"
 }
 
 variable "dns_name" {
@@ -94,7 +94,7 @@ variable "dns_name" {
 ## DEFINE sshkey to be used for compute instances
 #---------------------------------------------------------
 variable "ssh_public_key" {
-  default = "~/.ssh/id_rsa.pub"
+  default = "/Users/arjun.u.r1@ch.ibm.com/.ssh/ibmtf.pub"
 }
 
 #---------------------------------------------------------
@@ -156,7 +156,7 @@ variable "onprem_vpn_ip_address" {
 }
 
 variable "onprem_cidr" {
-  default = "192.168.248.0/24"
+  default = "9.164.29.0/18"
 }
 
 variable "vpn-preshared-key" {
